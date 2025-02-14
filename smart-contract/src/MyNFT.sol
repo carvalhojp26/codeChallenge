@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 import "../lib/openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 contract MyNFT is ERC721URIStorage {
-    uint256 private _nextTokenId = 1;
+    uint256 private _nextTokenId = 1; // Start as 1 for convention
     mapping(string => bool) private _usedTokenURIs;
     
     constructor() ERC721("MyNFT", "NFT") {}
