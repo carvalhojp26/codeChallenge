@@ -18,4 +18,21 @@ contract MyNFTTest is Test {
         assertEq(nft.ownerOf(tokenId), user);
         assertEq(nft.tokenURI(tokenId), "ipfs://example-uri");
     }
+
+    function testDuplicatedTokenURI() public {
+        string memory testURI = "ipfs://test-uri";
+        nft.MintNFT(user, testURI);
+
+        vm.expectRevert("TokenURI already used");
+        nft.MintNFT(user, testURI);
+    }
+
+    function testNullUser() public {
+        address nullUser = address(0);
+
+        string memory testURI = "ipfs://test-uri";
+        
+        vm.expectRevert("Invalid Address");
+        nft.MintNFT(nullUser, testURI);
+    }
 }
