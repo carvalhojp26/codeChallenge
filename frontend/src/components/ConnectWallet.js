@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserProvider } from "ethers";
+import "../styles.css"
 
 export default function ConnectWallet ({ setSigner }) {
     const [ account, setAcccount ] = useState(null);
@@ -32,9 +33,15 @@ export default function ConnectWallet ({ setSigner }) {
     return (
         <div>
             {account ? (
-                <p>Connected: {account}</p>
+                <div></div>
             ) : (
-                <button onClick={connectWallet}>Connect wallet</button>
+                <div className="container">
+                    <div>
+                       <h1 className="title-style">Welcome</h1>
+                        <p className="text-style">This is my solution to the Subvisual code challenge. In order to proceed connect with your Metamask wallet.</p>
+                    </div>
+                    <button className="button" onClick={connectWallet}>Connect wallet</button>
+                </div>
             )}
         </div>
     )
