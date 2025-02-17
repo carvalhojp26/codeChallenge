@@ -15,7 +15,15 @@ List of technologies used:
 
 ---
 
-## Executing
+## Requirements
+
+First, you will need a Metamask wallet with the extension installed. If you don’t have one, you can create it for free on their official website.
+
+Minting an NFT on the Sepolia Testnet requires a gas fee paid in Sepolia ETH. To obtain Sepolia ETH for free, you can use any available faucet. I personally recommend using Google Cloud Web3, as it doesn’t require a minimum balance in your wallet. 
+
+---
+
+## Running it locally
 
 ### 1️ - **Clone the repository**
 ```bash
