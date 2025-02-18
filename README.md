@@ -1,6 +1,6 @@
 # Mint NFT Code Challenge
 
-This repository contains the solution for the SubVisual apprenticeship code challenge. To solve it, I built a dApp for minting NFTs on the Sepolia Testnet. The frontend was developed using React and CSS, while the smart contract was written in Solidity. The smart contract is now deployed on the Sepolia Testnet.
+This repository contains the solution for the SubVisual code challenge. To solve it, I built a dApp for minting NFTs on the Sepolia Testnet. The frontend was developed using React and CSS, while the smart contract was written in Solidity. The smart contract is now deployed on the Sepolia Testnet.
 
 ---
 
@@ -20,6 +20,14 @@ List of technologies used:
 First, you will need a Metamask wallet with the extension installed. If you don’t have one, you can create it for free on their official website.
 
 Minting an NFT on the Sepolia Testnet requires a gas fee paid in Sepolia ETH. To obtain Sepolia ETH for free, you can use any available faucet. I personally recommend using Google Cloud Web3, as it doesn’t require a minimum balance in your wallet. 
+
+---
+
+## Access
+
+The project was deployed using Vercel and Sepolia, it can be accessed throught this link:
+
+[Website](https://codechallenge-git-main-carvalhojp26s-projects.vercel.app/)
 
 ---
 
