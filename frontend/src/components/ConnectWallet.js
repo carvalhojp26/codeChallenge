@@ -37,7 +37,7 @@ export default function ConnectWallet ({ setSigner }) {
             ) : (
                 <div className="container">
                     <div>
-                       <h1 className="title-style">Welcome</h1>
+                       <h1 className="title-style">Welcomeme</h1>
                         <p className="text-style">This is my solution to the Subvisual code challenge. In order to proceed connect with your Metamask wallet.</p>
                     </div>
                     <button className="button" onClick={connectWallet}>Connect wallet</button>
